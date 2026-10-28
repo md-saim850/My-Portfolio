@@ -26,16 +26,15 @@ export default function Navbar() {
             <a key={href} href={href} className="transition-colors hover:text-white">{label}</a>
           ))}
         </nav>
-
+        
         <a
-          href={profile.githubUrl}
-          target="_blank"
-          rel="noreferrer"
+          href="/MD-Saim-Resume.pdf"
+          download="MD-Saim-Resume.pdf"
           className="flex shrink-0 items-center gap-2 rounded-lg border border-zinc-700/80 bg-zinc-900 px-3 py-2 text-xs font-semibold text-zinc-200 transition hover:border-white hover:text-white sm:px-4"
         >
-          <span className="hidden sm:inline">Download Resume ↓</span>
-          <span className="sm:hidden">Download Resume ↓</span>
+          <span>Download Resume ↓</span>
         </a>
+
       </div>
     </header>
   );

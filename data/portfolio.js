@@ -35,6 +35,12 @@ export const skills = [
   },
 ];
 
+import bazarDor from '../public/projects/bazar-dor.png'
+import fitlog from '../public/projects/fitlog.png'
+import cakeWebsite from '../public/projects/cake-website.png'
+import devStack from '../public/projects/dev-stack.png'
+
+
 export const projects = [
   {
     id: 1,
@@ -49,7 +55,7 @@ export const projects = [
       "Responsive layouts for mobile and desktop",
     ],
     github: "https://github.com/md-saim850/Bazar_Dor",
-    demo: "",
+    image: bazarDor,
   },
   {
     id: 2,
@@ -76,7 +82,6 @@ export const projects = [
       "📦 Static file handling with WhiteNoise"
     ],
     github: "https://github.com/md-saim850/Manobota-Blood-Bank-API",
-    demo: "",
   },
   {
     id: 3,
@@ -91,7 +96,7 @@ export const projects = [
       "Responsive design",
     ],
     github: "https://github.com/md-saim850/FitLogWithNextJS",
-    demo: "",
+    image: fitlog,
   },
   {
     id: 4,
@@ -108,7 +113,7 @@ export const projects = [
       "Clean and simple user interface"
     ],
     github: "https://github.com/md-saim850/DevStackWithReact",
-    demo: "",
+    image: devStack,
   },
   {
     id: 5,
