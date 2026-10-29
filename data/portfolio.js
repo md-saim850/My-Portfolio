@@ -3,7 +3,7 @@ export const profile = {
   role: "Full Stack Web Developer",
   githubUrl: "https://github.com/md-saim850",
   githubLabel: "github.com/md-saim850",
-  linkedinUrl: "https://www.linkedin.com/md-saim850",
+  linkedinUrl: "https://www.linkedin.com/in/md-saim850",
   email: "mdsaim.dev@gmail.com",
   handle: "md-saim850",
   bio: "I build responsive web experiences and practical backend APIs with modern JavaScript and Python tools. I enjoy learning, solving problems, and turning ideas into useful products.",
@@ -35,12 +35,11 @@ export const skills = [
   },
 ];
 
-import bazarDor from '../public/projects/bazar-dor.png'
-import fitlog from '../public/projects/fitlog.png'
-import cakeWebsite from '../public/projects/cake-website.png'
-import devStack from '../public/projects/dev-stack.png'
-
-
+import bazarDor from '../public/projects/bazar-dor.jpeg'
+import fitlog from '../public/projects/fitlog.jpeg'
+import cakeWebsite from '../public/projects/cake-website.jpeg'
+import devStack from '../public/projects/dev-stack.jpeg'
+import apiImg from '../public/projects/API.jpg'
 export const projects = [
   {
     id: 1,
@@ -82,6 +81,7 @@ export const projects = [
       "📦 Static file handling with WhiteNoise"
     ],
     github: "https://github.com/md-saim850/Manobota-Blood-Bank-API",
+    image: apiImg,
   },
   {
     id: 3,
@@ -134,6 +134,6 @@ export const projects = [
       "Media Support — Store and serve product images during development",
     ],
     github: "https://github.com/md-saim850/Ecommerce-Cake-API",
-    demo: "",
+    image: apiImg,
   },
 ];

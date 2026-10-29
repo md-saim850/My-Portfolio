@@ -2,6 +2,7 @@
 import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import apiImg from "../public/projects/API.jpg"
 
 export default function ProjectCard({ project}) {
   return (
@@ -9,15 +10,15 @@ export default function ProjectCard({ project}) {
 
       {/* Large Project Image */}
       <Link href={`/projects/${project.slug ?? project.id}`} className="relative min-h-[260px] cursor-pointer overflow-hidden bg-zinc-900 sm:min-h-[340px] md:min-h-[400px]">
-        {project.image && (
-          <Image
-            src={project.image}
-            alt={`${project.title} project preview`}
-            fill
-            sizes="(max-width: 768px) 100vw, 55vw"
-            className="object-top transition-transform duration-700 ease-out group-hover:scale-105"
-          />
-        )}
+
+        <Image
+          src={project.image}
+          alt={`${project.title} project preview`}
+          fill
+          sizes="(max-width: 768px) 100vw, 55vw"
+          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+        />
+
 
         {/* Image Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />

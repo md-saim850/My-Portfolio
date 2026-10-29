@@ -90,14 +90,15 @@ export default async function ProjectDetailsPage({ params }) {
 
         {/* Large project preview */}
         {project.image && (
-          <div className="relative mb-14 aspect-video overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+          <div className="relative mb-14 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
             <Image
               src={project.image}
               alt={`${project.title} project screenshot`}
-              fill
+              width={1920}
+              height={1080}
               priority
               sizes="(max-width: 1200px) 100vw, 1152px"
-              className="object-top"
+              className="h-auto w-full object-contain"
             />
           </div>
         )}
