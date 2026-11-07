@@ -11,7 +11,7 @@ import {
   Layers,
   Code2,
 } from "lucide-react";
-import { projects } from '../../../data/portfolio';
+import { projects } from '../../../data/skillsData';
 
 export default async function ProjectDetailsPage({ params }) {
   const { id } = await params;

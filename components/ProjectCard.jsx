@@ -2,7 +2,6 @@
 import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import apiImg from "../public/projects/API.jpg"
 
 export default function ProjectCard({ project}) {
   return (

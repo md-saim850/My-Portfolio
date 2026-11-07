@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle2, Copy, ExternalLink, Github, Linkedin, Mail, Send } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { profile } from "../data/profileData";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);

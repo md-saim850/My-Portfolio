@@ -1,5 +1,4 @@
-import { Code2, Github } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { ArrowDown, Code2, Github } from "lucide-react";
 
 const links = [
   ["About", "#about"],
@@ -30,9 +29,10 @@ export default function Navbar() {
         <a
           href="/MD-Saim-Resume.pdf"
           download="MD-Saim-Resume.pdf"
-          className="flex shrink-0 items-center gap-2 rounded-lg border border-zinc-700/80 bg-zinc-900 px-3 py-2 text-xs font-semibold text-zinc-200 transition hover:border-white hover:text-white sm:px-4"
+          className="group relative flex shrink-0 items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3.5 py-2 text-sm font-semibold text-black transition-all duration-300 ease-out transform-gpu [perspective:1000px] hover:scale-100 hover:-translate-y-0.5 hover:rotate-x-6 hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] active:scale-100 active:translate-y-0 active:rotate-x-0"
         >
-          <span>Download Resume ↓</span>
+          <span>Download Resume</span>
+          <ArrowDown size={18} className="transition-transform duration-300 group-hover:translate-z-2 group-hover:translate-y-0.5" />
         </a>
 
       </div>

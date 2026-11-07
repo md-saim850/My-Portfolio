@@ -1,5 +1,5 @@
-import { ArrowRight, ChevronRight, Code2, Mail, Sparkles } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { ChevronRight, Mail, Sparkles } from "lucide-react";
+import { profile } from "../data/profileData";
 import Image from "next/image";
 
 export default function Hero() {

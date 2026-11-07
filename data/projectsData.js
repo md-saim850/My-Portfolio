@@ -1,43 +1,5 @@
-export const profile = {
-  name: "Md. Saim",
-  role: "Full Stack Web Developer",
-  githubUrl: "https://github.com/md-saim850",
-  githubLabel: "github.com/md-saim850",
-  linkedinUrl: "https://www.linkedin.com/in/md-saim850",
-  email: "mdsaim.dev@gmail.com",
-  handle: "md-saim850",
-  bio: "I build responsive web experiences and practical backend APIs with modern JavaScript and Python tools. I enjoy learning, solving problems, and turning ideas into useful products.",
-  highlights: ["React", "Next.js", "Node.js", "Express.js", "Django", "C++", "DSA"],
-  // Replace this with your own photo in /public and use "/profile.jpg".
-  image: "/saim-profile.png",
-};
-
-export const skills = [
-  {
-    category: "Languages & Core",
-    icon: "Terminal",
-    items: ["JavaScript (ES6+)", "Python", "C", "C++", "Data Structures & Algorithms", "HTML5 / CSS3"],
-  },
-  {
-    category: "Frontend & Styling",
-    icon: "Layers",
-    items: ["React.js", "Next.js", "Tailwind CSS", "Bootstrap", "Responsive Design", "React Hooks"],
-  },
-  {
-    category: "Backend & Frameworks",
-    icon: "Server",
-    items: ["Node.js", "Express.js", "Django", "Django REST Framework", "REST APIs", "Authentication"],
-  },
-  {
-    category: "Databases & Tools",
-    icon: "Database",
-    items: ["MongoDB", "PostgreSQL", "SQLite", "Git & GitHub", "Postman", "Vercel"],
-  },
-];
-
 import bazarDor from '../public/projects/bazar-dor.jpeg'
 import fitlog from '../public/projects/fitlog.jpeg'
-import cakeWebsite from '../public/projects/cake-website.jpeg'
 import devStack from '../public/projects/dev-stack.jpeg'
 import apiImg from '../public/projects/API.jpg'
 export const projects = [

@@ -1,9 +1,8 @@
-
 "use client";
 
 import { useMemo, useState } from "react";
 import { Laptop } from "lucide-react";
-import { projects } from "../data/portfolio";
+import { projects } from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 
 const filters = [
