@@ -107,7 +107,7 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <a
-            href="/MD-Saim-Resume.pdf"
+            href="/md-saim850-resume.pdf"
             download="MD-Saim-Resume.pdf"
             className="group flex shrink-0 items-center gap-1.5 rounded-lg border border-zinc-200 bg-gradient-to-r from-white to-zinc-300 px-2.5 py-2 text-xs font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.25)] active:translate-y-0 sm:px-3 sm:text-sm"
           >
