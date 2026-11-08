@@ -59,7 +59,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          href="#about"
+          href="#home"
           onClick={closeMenu}
           className="group flex shrink-0 items-center gap-2.5"
           aria-label="Md. Saim home"
@@ -82,7 +82,7 @@ export default function Navbar() {
             activeSection === href ?(
               <a
                 key={href}
-                href={href}
+                href={`/${href}`}
                 className="text-white underline underline-offset-12"
               >
                 {label}
@@ -91,7 +91,7 @@ export default function Navbar() {
 
               <a
                 key={href}
-                href={href}
+                href={`/${href}`}
                 onClick={() => setActiveLink(href)}
                 className="relative py-2 transition-colors duration-300 hover:text-white
                 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"

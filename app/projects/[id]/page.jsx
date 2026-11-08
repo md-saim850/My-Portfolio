@@ -12,6 +12,7 @@ import {
   Code2,
 } from "lucide-react";
 import { projects } from '../../../data/projectsData';
+import ParticleBackground from "../../../components/ParticleBackground";
 
 export default async function ProjectDetailsPage({ params }) {
   const { id } = await params;
@@ -27,6 +28,8 @@ export default async function ProjectDetailsPage({ params }) {
 
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-10 text-white sm:px-8 lg:px-12">
+      <ParticleBackground />
+
       <div className="mx-auto max-w-7xl">
 
         {/* Back navigation */}
@@ -94,9 +97,6 @@ export default async function ProjectDetailsPage({ params }) {
             <Image
               src={project.image}
               alt={`${project.title} project screenshot`}
-              width={1920}
-              height={1080}
-              priority
               sizes="(max-width: 1200px) 100vw, 1152px"
               className="h-auto w-full object-contain"
             />

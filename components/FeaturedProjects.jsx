@@ -89,7 +89,8 @@ export default function FeaturedProjects() {
         <div className="grid gap-6 md:grid-cols-2">
 
           {projects.map((project, index) => (
-            <article
+            <Link
+              href={`/projects/${project.id}`}
               key={project.id}
               className="group overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/30 transition-all duration-500 hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-900/70"
             >
@@ -176,8 +177,8 @@ export default function FeaturedProjects() {
 
                 </div>
               </div>
-            </article>
-          ))}
+            </Link>
+          )).slice(0, 4)}
 
         </div>
 

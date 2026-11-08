@@ -16,7 +16,6 @@ export default function Portfolio() {
       <div className="pointer-events-none fixed left-1/2 top-0 z-0 h-[300px] w-[600px] max-w-full -translate-x-1/2 rounded-full bg-white/5 blur-[140px]" />
       <div className="pointer-events-none fixed bottom-0 right-0 z-0 h-[400px] w-[400px] rounded-full bg-zinc-400/5 blur-[160px]" />
 
-      <Navbar />
       <main className="relative z-10 mx-auto max-w-7xl space-y-28 px-5 py-12 sm:px-6 md:space-y-32">
         <Hero />
         <About />
@@ -25,7 +24,6 @@ export default function Portfolio() {
         <Education />
         <Contact />
       </main>
-      <Footer />
     </div>
   );
 }
