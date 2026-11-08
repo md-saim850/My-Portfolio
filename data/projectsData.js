@@ -1,101 +1,53 @@
-import bazarDor from '../public/projects/bazar-dor.jpeg'
-import fitlog from '../public/projects/fitlog.jpeg'
-import devStack from '../public/projects/dev-stack.jpeg'
-import apiImg from '../public/projects/API.jpg'
+import studioSpace from '../public/projects/studioSpace.jpeg';
+import bazarDor from '../public/projects/bazar-dor.jpeg';
+import fitlog from '../public/projects/fitlog.jpeg';
+import devStack from '../public/projects/dev-stack.jpeg';
+import Cake from '../public/projects/cake-website.jpeg';
+import apiImg from '../public/projects/API.jpg';
+
 export const projects = [
   {
     id: 1,
-    title: "Bazar Dor",
-    category: "Frontend",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
-    description: "A Bangla-focused market price experience for exploring products and comparing daily price changes.",
-    features: [
-      "Product and category browsing",
-      "Dynamic product detail pages",
-      "Bangla market-price presentation",
-      "Responsive layouts for mobile and desktop",
-    ],
-    github: "https://github.com/md-saim850/Bazar_Dor",
-    image: bazarDor,
+    title: "StudioSpace",
+    category: "Studio Booking Platform",
+    description:
+      "A studio booking marketplace where creators can discover studios, explore facilities, and manage their bookings.",
+    image: studioSpace,
+    technologies: ["Next.js", "Express.js", "MongoDB", "Better Auth"],
+    liveUrl: "https://studio-space-client-one.vercel.app",
+    githubUrl: "https://github.com/md-saim850/StudioSpace-client",
   },
   {
     id: 2,
-    title: "Manobota Blood Bank API",
-    category: "Backend",
-    tags: ["Django", "Django REST Framework"],
-    description: "A RESTful Blood Bank API built with Django and Django REST Framework to manage users, blood groups, donor profiles, authentication, and donor availability.",
-    features: [
-      "🔐 JWT Authentication",
-      "👤 Custom User Model",
-      "📧 Email-based authentication",
-      "🩸 Blood Group Management",
-      "🧑‍🤝‍🧑 Donor Profile Management",
-      "📍 Donor location information",
-      "✅ Donor availability status",
-      "📊 Total donation tracking",
-      "🔎 Donor filtering by blood group and availability",
-      "📄 API pagination",
-      "🔑 Djoser authentication endpoints",
-      "🛡️ Permission-based API access",
-      "🌐 CORS configuration",
-      "🗄️ PostgreSQL database support",
-      "🚀 Production-ready Gunicorn configuration",
-      "📦 Static file handling with WhiteNoise"
-    ],
-    github: "https://github.com/md-saim850/Manobota-Blood-Bank-API",
-    image: apiImg,
+    title: "Bazar Dor",
+    category: "E-commerce Application",
+    description:
+      "An online shopping application designed to provide users with a smooth product browsing and shopping experience.",
+    image: bazarDor,
+    technologies: ["Next.js", "Tailwind CSS", "API", "Authentication"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sayeemahmed12/Bazar_Dor",
   },
   {
     id: 3,
     title: "FitLog",
-    category: "Frontend",
-    tags: ["Next.js", "React", "Tailwind CSS", "REST API"],
-    description: "A fitness tracking interface for viewing workout plans and managing saved workout information.",
-    features: [
-      "Workout plan and saved-item interface",
-      "Reusable React components",
-      "API-driven data",
-      "Responsive design",
-    ],
-    github: "https://github.com/md-saim850/FitLogWithNextJS",
+    category: "Fitness Tracking Application",
+    description:
+      "A fitness tracking application that helps users manage their fitness activities and monitor their progress.",
     image: fitlog,
+    technologies: ["Next.js", "Tailwind CSS", "DaisyUI", "API"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sayeemahmed12/FitLogWithNextJS",
   },
   {
     id: 4,
-    title: "DevStack",
-    category: "Frontend",
-    tags: ["TypeScript", "React", "Tailwind CSS", "Vite"],
-    description: "DevStack is a simple and responsive web application where users can explore different technologies and build their own technology stack.",
-    features: [
-      "Explore different technologies",
-      "Add technologies to your stack",
-      "Remove specific technologies from your stack",
-      "Remove all technologies from your stack",
-      "Responsive design",
-      "Clean and simple user interface"
-    ],
-    github: "https://github.com/md-saim850/DevStackWithReact",
-    image: devStack,
-  },
-  {
-    id: 5,
-    title: "Express REST API Practice",
-    category: "Backend",
-    tags: ["Python", "Django", "Django REST Framework", "Djoser / JWT authentication", "Postgresql"],
-    description: "A RESTful API for a cake e-commerce platform built with Python, Django, and Django REST Framework (DRF). This backend powers an online cake shop where customers can explore products, manage their shopping carts, and place orders.",
-    features: [
-      "Product Management — Retrieve and manage cake products and product information",
-      "User Authentication — User registration, authentication, and account management",
-      "Shopping Cart — Support for shopping cart operations",
-      "Checkout System — Process checkout requests and validate order information",
-      "Shipping Addresses — Manage customer shipping and delivery details",
-      "Order Management — Create and manage customer orders",
-      "Cash on Delivery — Support for cash-on-delivery payments",
-      "Django Admin Panel — Manage application data through Django's administration interface",
-      "RESTful API — Exchange data between the frontend and backend using HTTP requests",
-      "Media Support — Store and serve product images during development",
-    ],
-    github: "https://github.com/md-saim850/Ecommerce-Cake-API",
-    image: apiImg,
+    title: "Cake E-commerce",
+    category: "E-commerce API",
+    description:
+      "A cake shopping platform featuring product management, authentication, and an integrated shopping experience.",
+    image: Cake,
+    technologies: ["React", "Django", "DRF", "PostgreSQL"],
+    liveUrl: "https://cake-website-api-1.onrender.com",
+    githubUrl: "https://github.com/md-saim850/Ecommerce-Cake-API",
   },
 ];

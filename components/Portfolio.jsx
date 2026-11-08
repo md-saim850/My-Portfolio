@@ -1,10 +1,12 @@
 import ParticleBackground from "../components/ParticleBackground";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import About from '../components/About'
 import Skills from "../components/Skills";
-import Projects from "../components/Projects";
+import Education from '../components/Education';
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import FeaturedProjects from "./FeaturedProjects";
 
 export default function Portfolio() {
 
@@ -17,8 +19,10 @@ export default function Portfolio() {
       <Navbar />
       <main className="relative z-10 mx-auto max-w-7xl space-y-28 px-5 py-12 sm:px-6 md:space-y-32">
         <Hero />
+        <About />
         <Skills />
-        <Projects/>
+        <FeaturedProjects/>
+        <Education />
         <Contact />
       </main>
       <Footer />

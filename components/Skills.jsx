@@ -211,7 +211,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 space-y-10"
+      className="scroll-mt-15 space-y-10"
     >
       {/* Section Heading */}
       <div className="space-y-3 text-center">
@@ -272,7 +272,7 @@ export default function Skills() {
 
       {/* Skills Grid */}
       <div
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
       >
         {filteredSkills.map((skill) => (
           <article
@@ -307,7 +307,7 @@ export default function Skills() {
             </h3>
 
             {/* Description */}
-            <p className="text-sm leading-6 text-zinc-500 transition group-hover:text-zinc-400">
+            <p className="text-sm leading-6 text-zinc-400 transition group-hover:text-zinc-400">
               {skill.description}
             </p>
 

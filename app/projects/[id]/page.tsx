@@ -11,7 +11,7 @@ import {
   Layers,
   Code2,
 } from "lucide-react";
-import { projects } from '../../../data/skillsData';
+import { projects } from '../../../data/projectsData';
 
 export default async function ProjectDetailsPage({ params }) {
   const { id } = await params;
@@ -27,7 +27,7 @@ export default async function ProjectDetailsPage({ params }) {
 
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-10 text-white sm:px-8 lg:px-12">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
 
         {/* Back navigation */}
         <Link
