@@ -54,7 +54,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-800/60 bg-[#0a0a0c]/90 backdrop-blur-xl">
+    <header data-aos="fade-down" className="sticky top-0 z-50 border-b border-zinc-800/60 bg-[#0a0a0c]/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 sm:h-[72px] max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
 
         {/* Logo */}

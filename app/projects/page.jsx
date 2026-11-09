@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { projects } from "../../data/projectsData";
+import ParticleBackground from "../../components/ParticleBackground";
 
 const filters = [
   "All",
@@ -63,7 +64,7 @@ export default function AllProjectsPage() {
         </Link>
 
         {/* Page Heading */}
-        <div className="mb-12">
+        <div data-aos="fade-in" className="mb-12">
           <div className="mb-4 flex items-center gap-2">
             <span className="h-px w-8 bg-white" />
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
@@ -84,7 +85,7 @@ export default function AllProjectsPage() {
         </div>
 
         {/* Project Count */}
-        <div className="mb-8 flex items-center justify-between border-y border-zinc-800 py-5">
+        <div data-aos="fade-right" className="mb-8 flex items-center justify-between border-y border-zinc-800 py-5">
           <div className="flex items-center gap-3">
             <Code2 size={19} className="text-zinc-400" />
             <span className="text-sm text-zinc-400">
@@ -98,7 +99,7 @@ export default function AllProjectsPage() {
         </div>
 
         {/* Filters and Search */}
-        <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+        <div data-aos="fade-right" className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
 
           {/* Filters */}
           <div className="flex flex-wrap gap-2">
@@ -139,7 +140,9 @@ export default function AllProjectsPage() {
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
             {filteredProjects.map((project, index) => (
-              <article
+              <Link
+                href={`/projects/${project.id}`}
+                data-aos="fade-right"
                 key={project.id}
                 className="group overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/30 transition-all duration-500 hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-900/70"
               >
@@ -240,7 +243,7 @@ export default function AllProjectsPage() {
                   </div>
 
                 </div>
-              </article>
+              </Link>
             ))}
 
           </div>
@@ -273,7 +276,7 @@ export default function AllProjectsPage() {
         )}
 
         {/* Bottom Section */}
-        <div className="mt-20 border-t border-zinc-800 pt-10 text-center">
+        <div data-aos="fade-up" className="mt-20 border-t border-zinc-800 pt-10 text-center">
           <p className="text-sm text-zinc-500">
             Interested in my work?
           </p>

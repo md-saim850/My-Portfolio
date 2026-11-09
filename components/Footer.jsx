@@ -30,7 +30,7 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black px-5 sm:px-8 lg:px-12">
+    <footer data-aos="fade-up" className="border-t border-white/10 bg-black px-5 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl py-12">
         <div className="flex flex-col justify-between gap-10 md:flex-row md:items-start">
           {/* Brand */}

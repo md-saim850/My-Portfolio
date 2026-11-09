@@ -27,7 +27,7 @@ export default function ProjectCard({ project}) {
         </span>
 
         <div className="absolute bottom-5 left-5 flex items-center gap-2 text-xs text-white/80">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+          <span className="h-2 w-2 rounded-full bg-emerald-400" />
           Featured Project
         </div>
 

@@ -39,7 +39,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
 
         {/* Section Heading */}
-        <div className="mb-14">
+        <div data-aos="fade-in" className="mb-14">
           <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-zinc-500">
             <span className="h-px w-8 bg-zinc-500" />
             Get to know me
@@ -59,7 +59,7 @@ export default function About() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
 
           {/* Profile Image */}
-          <div className="relative mx-auto w-full max-w-sm">
+          <div data-aos="fade-right" className="relative mx-auto w-full max-w-sm">
 
             {/* Background Decoration */}
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-white/10 via-transparent to-zinc-600/10 blur-2xl" />
@@ -102,7 +102,7 @@ export default function About() {
           </div>
 
           {/* About Content */}
-          <div className="space-y-7">
+          <div data-aos="fade-left" className="space-y-7">
 
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/70 px-3 py-1.5 text-xs text-zinc-400">
@@ -192,6 +192,7 @@ export default function About() {
             </div>
 
           </div>
+
         </div>
       </div>
     </section>

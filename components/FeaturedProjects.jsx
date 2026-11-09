@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
 
         {/* Section Header */}
-        <div className="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+        <div data-aos="fade-in" className="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
 
           <div>
             <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-zinc-500">
@@ -90,6 +90,7 @@ export default function FeaturedProjects() {
 
           {projects.map((project, index) => (
             <Link
+              data-aos="fade-up"
               href={`/projects/${project.id}`}
               key={project.id}
               className="group overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900/30 transition-all duration-500 hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-900/70"

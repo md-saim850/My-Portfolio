@@ -66,7 +66,7 @@ export default function Contact() {
     <section id="contact" className="px-5 py-24 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
         {/* Section Heading */}
-        <div className="mb-14">
+        <div data-aos="fade-in" className="mb-14">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-zinc-500">
             Get in touch
           </p>
@@ -83,7 +83,7 @@ export default function Contact() {
 
         <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
           {/* Contact Information */}
-          <div className="space-y-6">
+          <div data-aos="fade-right" className="space-y-6">
             <div>
               <h3 className="mb-5 text-xl font-semibold text-white">
                 Contact Information
@@ -139,7 +139,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+          <div data-aos="fade-left" className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
             <h3 className="text-xl font-semibold text-white">
               Send me a message
             </h3>

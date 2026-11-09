@@ -214,7 +214,7 @@ export default function Skills() {
       className="scroll-mt-15 space-y-10"
     >
       {/* Section Heading */}
-      <div className="space-y-3 text-center">
+      <div data-aos="fade-in" className="space-y-3 text-center">
         <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900 px-4 py-1.5 text-xs font-medium text-zinc-400">
           <Sparkles className="h-3.5 w-3.5" />
           My Technical Skills
@@ -232,7 +232,7 @@ export default function Skills() {
       </div>
 
       {/* Category Filters */}
-      <div className="flex flex-wrap items-center justify-center gap-2">
+      <div data-aos="fade-up" className="flex flex-wrap items-center justify-center gap-2">
         {filters.map((filter) => {
           const Icon = filterIcons[filter];
           const isActive = activeFilter === filter;
@@ -276,6 +276,7 @@ export default function Skills() {
       >
         {filteredSkills.map((skill) => (
           <article
+            data-aos="fade-right"
             key={skill.name}
             className="group relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900 hover:shadow-[0_10px_35px_rgba(255,255,255,0.04)]"
           >

@@ -43,7 +43,7 @@ export default function Education() {
       <div className="mx-auto max-w-7xl px-5">
 
         {/* Section Header */}
-        <div className="mb-12 text-center">
+        <div data-aos="fade-out" className="mb-12 text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-neutral-200 px-4 py-2 text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
             <GraduationCap size={16} />
             My Background
@@ -66,7 +66,7 @@ export default function Education() {
         <div className="grid gap-8 lg:grid-cols-2">
 
           {/* Education Card */}
-          <div>
+          <div data-aos="fade-right">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-white">
                 <GraduationCap size={20} />
@@ -126,7 +126,7 @@ export default function Education() {
           </div>
 
           {/* Learning Card */}
-          <div>
+          <div data-aos="fade-left">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-white">
                 <BookOpen size={20} />

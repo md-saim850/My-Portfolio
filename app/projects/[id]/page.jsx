@@ -42,7 +42,7 @@ export default async function ProjectDetailsPage({ params }) {
         </Link>
 
         {/* Header */}
-        <header className="mb-10 border-b border-zinc-800 pb-8">
+        <header data-aos="fade-in" className="mb-10 border-b border-zinc-800 pb-8">
           <div className="mb-5 flex flex-wrap items-center gap-3">
             <span className="rounded-full border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-300">
               {project.category}
@@ -93,18 +93,18 @@ export default async function ProjectDetailsPage({ params }) {
 
         {/* Large project preview */}
         {project.image && (
-          <div className="relative mb-14 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+          <div data-aos="fade-right" className="relative w-fit h-fit mx-auto mb-14 overflow-hidden rounded-2xl">
             <Image
               src={project.image}
               alt={`${project.title} project screenshot`}
               sizes="(max-width: 1200px) 100vw, 1152px"
-              className="h-auto w-full object-contain"
+              className="h-[300px] sm:h-[400px] md:h-[400px] lg:h-[500px] w-full object-contain"
             />
           </div>
         )}
 
         {/* Project content */}
-        <div className="grid gap-12 md:grid-cols-[1fr_320px]">
+        <div data-aos="fade-up" className="grid gap-12 md:grid-cols-[1fr_320px]">
 
           {/* Overview and features */}
           <div className="space-y-12">
@@ -189,7 +189,7 @@ export default async function ProjectDetailsPage({ params }) {
         </div>
 
         {/* Bottom navigation */}
-        <div className="mt-16 border-t border-zinc-800 pt-8">
+        <div data-aos="fade-up" className="mt-16 border-t border-zinc-800 pt-8">
           <Link
             href="/#projects"
             className="inline-flex items-center gap-2 text-sm text-zinc-400 transition hover:text-white"

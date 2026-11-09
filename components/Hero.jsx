@@ -28,14 +28,15 @@ const socialLinks = [
 export default function Hero() {
   return (
     <section
+      data-aos="fade-in"
       id="home"
-      className="animate-fade-up flex scroll-mt-28 flex-col-reverse items-center justify-between gap-12 pt-6 md:flex-row md:pt-12"
+      className="flex scroll-mt-28 flex-col-reverse items-center justify-between gap-12 pt-6 md:flex-row md:pt-12"
     >
       {/* Hero Content */}
       <div className="flex-1 space-y-6 text-center md:text-left">
 
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-700/60 bg-zinc-900/80 px-3.5 py-1.5 text-xs text-zinc-300 shadow-[0_0_15px_rgba(255,255,255,0.05)] backdrop-blur">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+          <span className="h-2 w-2 rounded-full bg-emerald-400" />
           Open to learning and developer opportunities
         </div>
 

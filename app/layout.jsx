@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import AOSProvider from '../components/AOSProvider'
 import "./globals.css";
 
 export const metadata = {
@@ -12,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <AOSProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );
